@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>LOAD SCANNER HARDWARE CONFIG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- <link rel="stylesheet" href="all.css"> -->
+
+</head>
+
+<body>
+    <!-- <header> -->
+        <nav>
+            <div class="topnav">
+            <h3><i class="fas fa-chart-bar"></i> LOAD SCANNER HARDWARE CONFIG <span style="text-align:left;">&nbsp;&nbsp; <i
+                        class="fas fa-user-slash icon-pointer" onclick="logoutButton()"></i></span></h3>
+            <ul class="nav-links">
+                <!-- <li><a href="index.html">Home</a></li>
+                <li><a href="chart.html">Chart</a></li> -->
+                <li> <button class="button_page" id="home_page" type="submit">Home </button></li>
+                <li> <button class="button_page" id="chart_page" type="submit">Chart</button></li>
+                <!-- Tambahkan tautan ke halaman lain sesuai kebutuhan -->
+            </ul>
+        </div>
+        </nav>
+    <!-- </header> -->
+    <div class="content">
+        <div class="cards">           
+            <div class="card general-card">
+                <h4><i class="fa-solid fa-wifi"></i> Device Name</h4>
+                <div>
+                    <p>
+                        <label for="deviceName">Please set Device Name:</label>
+                        <input type="text" id="deviceName" name="deviceName" class="textbox" placeholder="UDDIN" oninput="update('deviceName',this.value)">
+                    </p>
+                </div>
+            </div>
+            <div class="card general-card">
+                <!-- <h4><i class="fas fa-chart-bar"></i> SSID</h4> -->
+                <h4><i class="fa-solid fa-wifi"></i> Deployment Location</h4>
+                <div>
+                    <p>
+                        <label for="deploymentLocation">Please set Deployment Location:</label>
+                        <input type="text" id="deploymentLocation" name="deploymentLocation" class="textbox" placeholder="YOGYAKARTA" oninput="update('deploymentLocation',this.value)">
+                    </p>
+                </div>
+            </div>
+            <div class="card general-card">
+                <!-- <h4><i class="fas fa-chart-bar"></i> SSID</h4> -->
+                <h4><i class="fa-solid fa-wifi"></i> Production Number</h4>
+                <div>
+                    <p>
+                        <label for="productionNumber">Please set Production Number:</label>
+                        <input type="text" id="productionNumber" name="productionNumber" class="textbox" placeholder="123456789" oninput="update('productionNumber',this.value)">
+                    </p>
+                </div>
+            </div>
+            <div class="card general-card">
+                <!-- <h4><i class="fas fa-chart-bar"></i> SSID</h4> -->
+                <h4><i class="fa-solid fa-wifi"></i> Username ID</h4>
+                <div>
+                    <p>
+                        <label for="usernameID">Please set Username ID:</label>
+                        <input type="text" id="usernameID" name="usernameID" class="textbox" placeholder="dhiyauddin" oninput="update('usernameID',this.value)">
+                    </p>
+                </div>
+            </div>
+            <div class="card general-card">
+                <!-- <h4><i class="fas fa-chart-bar"></i> SSID</h4> -->
+                <h4><i class="fa-solid fa-wifi"></i> Password ID</h4>
+                <div>
+                    <p>
+                        <label for="passwordID">Please set Password ID:</label>
+                        <input type="text" id="passwordID" name="passwordID" class="textbox" placeholder="bismillah" oninput="update('passwordID',this.value)">
+                    </p>
+                </div>
+            </div>
+
+            <div class="card button-drop-down">
+                <h4><i class="fa-solid fa-satellite-dish"></i> Data Connection</h4>
+                <!-- <i class="fa-solid fa-satellite-dish"></i> -->
+                <div>
+                    <p>
+                        <label for="DATA_CONNECTION">Choose communication:</label>
+                        <select name="DATA_CONNECTION" id="DATA_CONNECTION">
+                            <option value="Ethernet">ETHERNET</option> selected>Ethernet</option>
+                            <option value="Wifi">WIFI</option>
+                            <!-- <option value="silver" selected>Silver</option>
+                            <option value="Gold">Gold</option> -->
+                        </select>
+                    </p>
+                </div>
+            </div>
+            <div class="card general-card">
+                <!-- <h4><i class="fas fa-chart-bar"></i> SSID</h4> -->
+                <h4><i class="fa-solid fa-wifi"></i> Device IP</h4>
+                <div>
+                    <p>
+                        <label for="deviceIP">Please set Device IP:</label>
+                        <input type="text" id="deviceIP" name="deviceIP" class="textbox" placeholder="192.168.1.200" oninput="update('deviceIP',this.value)">
+                    </p>
+                </div>
+            </div>
+            <div class="card general-card">
+                <!-- <h4><i class="fas fa-chart-bar"></i> SSID</h4> -->
+                <h4><i class="fa-solid fa-wifi"></i> Server</h4>
+                <div>
+                    <p>
+                        <label for="ipServer">Please set IP NUC:</label>
+                        <input type="text" id="ipServer" name="ipServer" class="textbox" placeholder="192.168.1.125" oninput="update('ipServer',this.value)">
+                    </p>
+                </div>
+            </div>
+            <div class="card general-card">
+                <h4><i class="fa-solid fa-lock"></i> Gateway</h4>
+                <div>
+                    <!-- <p class="reading"><span id="humi"></span>&percnt;</p> -->
+                    <p>
+                        <label for="ipGateway">Please set Communication Gateway:</label>
+                        <input type="text" id="ipGateway" name="ipGateway" class="textbox" placeholder="192.168.1.1" oninput="update('ipGateway',this.value)">
+
+                    </p>
+                </div>
+            </div>
+            <div class="card general-card">
+                <h4><i class="fa-solid fa-lock"></i> QC Feature</h4>
+                <div>
+                    <p>
+                        <label class="switch"><input type="checkbox" id="button_qc" onchange="update('button_qc')"><span class="slider">
+                        </span></label>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card button-drop-down">
+                <h4><i class="fa-solid fa-satellite-dish"></i> Wifi Configuration</h4>
+                <!-- <i class="fa-solid fa-satellite-dish"></i> -->
+                <div class="wifi_setting1">
+                    <p>
+                        <label for="membership">Choose Wifi Configuration:</label>
+                        <select name="wifiConfiguration" id="wifiConfiguration">
+                            <option value="Access Point" selected>ACCESS POINT</option>
+                            <option value="WIFI Client">WIFI CLIENT</option>
+                            <!-- <option value="silver" selected>Silver</option>
+                            <option value="Gold">Gold</option> -->
+                        </select>
+                    </p>
+                </div>
+            </div>
+            <div class="card general-card">
+                <!-- <h4><i class="fas fa-chart-bar"></i> SSID</h4> -->
+                <h4><i class="fa-solid fa-wifi"></i> Wifi IP</h4>
+                <div class="wifi_setting2">
+                    <p>
+                        <label for="wifiIP">Please set Wifi IP:</label>
+                        <input type="text" id="wifiIP" name="wifiIP" class="textbox" placeholder="192.168.4.1" oninput="update('wifiIP',this.value)">
+                    </p>
+                </div>
+            </div>
+            <div class="card general-card">
+                <h4><i class="fa-solid fa-lock"></i> Wifi Gateway</h4>
+                <div class="wifi_setting3">
+                    <!-- <p class="reading"><span id="humi"></span>&percnt;</p> -->
+                    <p>
+                        <label for="wifiGateway">Please set Communication Gateway:</label>
+                        <input type="text" id="wifiGateway" name="wifiGateway" class="textbox" placeholder="192.168.4.1" oninput="update('wifiGateway',this.value)">
+
+                    </p>
+                </div>
+            </div>
+            <div class="card general-card">
+                <!-- <h4><i class="fas fa-chart-bar"></i> SSID</h4> -->
+                <h4><i class="fa-solid fa-wifi"></i> Wifi SSID</h4>
+                <div>
+                    <p>
+                        <label for="wifiSSID">Please set SSID Name:</label>
+                        <input type="text" id="wifiSSID" name="wifiSSID" class="textbox" placeholder="LS_V2" oninput="update('wifiSSID',this.value)">
+                    </p>
+                </div>
+            </div>
+            <div class="card general-card">
+                <!-- <h4><i class="fas fa-chart-bar"></i> SSID</h4> -->
+                <h4><i class="fa-solid fa-wifi"></i> Password</h4>
+                <div>
+                    <p>
+                        <label for="wifiPASSWORD">Please set SSID Password:</label>
+                        <input type="text" id="wifiPASSWORD" name="wifiPASSWORD" class="textbox" placeholder="janganlupasolat" oninput="update('wifiPASSWORD',this.value)">
+                    </p>
+                </div>
+            </div>
+            
+        <div class="card2">
+            <div class="saveButton">
+                <button id="saveButton_"><i class="fas fa-save icon">SAVE BUTTON</i></button>
+            </div>
+        </div>
+        </div>
+        <script src="main_script.js"></script>
+</body>
+
+</html>

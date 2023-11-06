@@ -1,0 +1,98 @@
+<!-- Complete project details: https://randomnerdtutorials.com/esp32-plot-readings-charts-multiple/ -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>ESP IOT DASHBOARD</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" type="text/css" href="chart_style.css">
+  <script src="chart_animation.js"></script>
+</head>
+
+<body>
+  <div class="topnav">
+    <h1>LOAD SCANNER HARDWARE CHART</h1>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="chart.html">Chart</a></li>
+      <!-- Tambahkan tautan ke halaman lain sesuai kebutuhan -->
+    </ul>
+  </div>
+  <div class="content">
+    <div class="card-grid">
+      <div class="card">
+        <p class="card-title">Angle Testing</p>
+        <div id="chart-temperature" class="chart-container"></div>
+      </div>
+    </div>
+    <div class="card2">
+      <div class="card general-card">
+        <h4><i class="fa-solid fa-wifi"></i> Command Iput</h4>
+        <div>
+          <p>
+            <input type="text" id="commandInput" name="commandInput" class="textbox" placeholder="Input the Command"
+              oninput="update('commandInput',this.value)">
+            <!-- <button id="saveButton_"><i class="fas fa-save icon"></i></button> -->
+            <button class="myButton"  id="myButton">Kirim Data</button>
+          </p>
+        </div>
+      </div>
+      <div class="card general-card">
+        <!-- <h4><i class="fas fa-chart-bar"></i> SSID</h4> -->
+        <h4><i class="fa-solid fa-wifi"></i> IMU Angle</h4>
+        <div>
+          <p>
+          <p class="reading"><span id="imuAngle"></span> &deg</p>
+          </p>
+        </div>
+      </div>
+
+      <div class="card general-card">
+        <!-- <h4><i class="fas fa-chart-bar"></i> SSID</h4> -->
+        <h4><i class="card-title"></i> Error Angle</h4>
+        <div>
+          <p>
+          <p class="reading"><span id="errorAngle"></span> &deg</p>
+          </p>
+        </div>
+      </div>
+
+      <div class="card general-card">
+        <!-- <h4><i class="fas fa-chart-bar"></i> SSID</h4> -->
+        <h4><i class="fa-solid fa-wifi"></i> Run Time</h4>
+        <div>
+          <p>
+          <p class="reading"><span id="runTime"></span></p>
+          </p>
+        </div>
+      </div>
+
+      <div class="card general-card">
+        <!-- <h4><i class="fas fa-chart-bar"></i> SSID</h4> -->
+        <h4><i class="card-title"></i> Tick Angle</h4>
+        <div>
+          <p>
+          <p class="reading"><span id="tickAngle"></span>&deg</p>
+          </p>
+        </div>
+      </div>
+      <div class="card general-card">
+        <!-- <h4><i class="fas fa-chart-bar"></i> SSID</h4> -->
+        <h4><i class="card-title"></i> Average Error</h4>
+        <div>
+          <p>
+          <p class="reading"><span id="averageError"></span>&deg</p>
+          <p class="reading"><span id="."></span>.</p>
+          </p>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <script src="chart_script2.js"></script>
+</body>
+
+</html>

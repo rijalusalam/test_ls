@@ -1,0 +1,17 @@
+{
+    "deviceName" : "UDDIN",
+    "deploymentLocation" : "YOGYAKARTA",
+    "productionNumber" : "123456789",
+    "usernameID" : "dhiyauddin",
+    "passwordID" : "bismillah",
+    "DATA_CONNECTION" : "Ethernet",
+    "deviceIP" : "192.68.1.200",
+    "ipServer"  : "192.681.125",
+    "ipGateway" : "192.68.1.1",
+    "button_qc" : "0",
+    "wifiConfiguration" : "Access Point",
+    "wifiIP" : "192.68.4.1",
+    "wifiGateway" : "192.68.4.1",
+    "wifiSSID" : "LS_V2",
+    "wifiPASSWORD" : "janganlupasolat"
+}

@@ -1,0 +1,373 @@
+label {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* CSS untuk select box */
+select {
+    font-family: 'Lexend', sans-serif;
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* CSS untuk option dalam select box */
+option {
+    font-size: 16px;
+}
+
+html {
+    font-family: Arial;
+    display: inline-block;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.8rem;
+    color: white;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+.test{
+    display:none;
+}
+
+h5 {
+    font-size: 1.2rem;
+}
+
+p {
+    font-size: 1.4rem;
+}
+
+body {
+    margin: 0;
+    align-items: left;
+    margin-left : 20px
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 68px;
+    margin-bottom: 20px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 68px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 52px;
+    width: 52px;
+    left: 8px;
+    bottom: 8px;
+    background-color: #fff;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 68px
+}
+
+input:checked+.slider {
+    background-color: #1b78e2
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(52px);
+    -ms-transform: translateX(52px);
+    transform: translateX(52px)
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #1b78e2;
+}
+
+.content {
+    align-items: left;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.card {
+    background-color: white;
+    box-shadow: 2px 2px 12px 1px rgba(140, 140, 140, .5);
+}
+
+.cards {
+    /* margin-left : 50px; */
+    max-width: 1800px;
+    margin: 1 auto;
+    display: grid;
+    grid-gap:2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: left;
+}
+
+.slider2 {
+    -webkit-appearance: none;
+    margin: 14px;
+    height: 20px;
+    background: #ccc;
+    outline: none;
+    opacity: 0.8;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin-bottom: 40px;
+}
+
+.slider:hover,
+.slider2:hover {
+    opacity: 1;
+}
+
+.slider2::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    background: #008B74;
+    cursor: pointer;
+}
+
+.slider2::-moz-range-thumb {
+    width: 40px;
+    height: 40px;
+    background: #008B74;
+    cursor: pointer;
+}
+
+.reading {
+    font-size: 2.6rem;
+}
+
+.button-drop-down {
+    color: #1b78e2;
+
+}
+
+
+.card-light {
+    /* width: 200%; */
+    color: #008B74;
+}
+
+.general-card {
+    color: #1b78e2;
+}
+.button-drop-down-wifi{
+    color: #1b78e2;
+    /* display : none; */
+
+}
+.general-card-wifi1 {
+    color: #1b78e2;
+    /* display : none; */
+}
+
+.general-card-wifi2 {
+    color: #1b78e2;
+    /* display : none; */
+}
+
+.general-card-wifi3 {
+    color: #1b78e2;
+    /* display : none; */
+}
+
+.general-card-wifi4 {
+    color: #1b78e2;
+    /* display : none; */
+}
+
+.card-motion {
+    /* margin-left: 50%; */
+    color: #3b3b3b;
+    cursor: pointer;
+}
+
+.icon-pointer {
+    cursor: pointer;
+}
+
+.textbox {
+    font-family: 'Lexend', sans-serif;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #3498db;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f8f8f8;
+    transition: border-color 0.3s ease-in-out;
+    width: 80%;
+}
+
+.textbox:focus {
+    outline: none;
+    border-color: #ff6b6b; /* Warna border saat fokus */
+    box-shadow: 0px 0px 5px rgba(255, 107, 107, 0.5); /* Efek bayangan saat fokus */
+}
+
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+.button_page{
+
+    width: 100%;
+    height : 30px;
+    background-color: #1b78e2;
+    font-size: 150%;
+    color: #fff;
+    /* color: #007BFF; */
+    border: none;
+    border-radius: px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.button_page:hover{
+    background-color: #0056b3;
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    position: relative;
+    transition: color 0.3s;
+    cursor: pointer; /* Tambahkan properti cursor di sini */
+}
+
+.nav-links a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFA500;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-links a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.nav-links a:hover {
+    color: #FFA500;
+}
+
+.nav-links a.active {
+    color: #FFA500;
+}
+
+
+.nav-links b {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    position: relative;
+    transition: color 0.3s;
+    cursor: pointer; /* Tambahkan properti cursor di sini */
+}
+
+.nav-links b::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFA500;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-links b:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.nav-links b:hover {
+    color: #fff;
+}
+
+.nav-links b.active {
+    color: #FFA500;
+}
+
+.card2{
+    text-align: right;
+}
+.saveButton{
+    margin: 20px;
+    text-align: right;
+}
+
+button {
+    padding: 20px 40px;
+    font-size: 50px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    background-color: #3498db; /* Warna latar belakang */
+    color: #fff; /* Warna teks */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    /* float: right; Mengatur tombol di sebelah kanan */
+}
+
+button:hover {
+    background-color: #2980b9; /* Warna latar belakang saat dihover */
+}
+
+.wifi_setting1{
+    /* display:none; */
+}
+.wifi_setting2{
+    /* display:none; */
+}
+.wifi_setting3{
+    /* display:none; */
+}

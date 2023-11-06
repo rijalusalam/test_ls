@@ -1,0 +1,138 @@
+/*  Complete project details: https://randomnerdtutorials.com/esp32-plot-readings-charts-multiple/  */
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  /* text-align: center; */
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #1b78e2;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.3s;
+  cursor: pointer;
+  /* Tambahkan properti cursor di sini */
+}
+
+body {
+  margin: 0;
+  /* transition:0% */
+  /* transition: 'background-color 0.3s'; */
+}
+
+.content {
+  /* align-items: center; */
+  text-align: center;
+  padding: 1%;
+}
+
+.myButton {
+  text display: 'inline-block';
+  margin : '10px';
+  padding: '10px 20px';
+  background-color: '#0074D9';
+  color: '#fff';
+  text-decoration: 'none';
+  border-radius: 3 transition: 'background-color 0,04)';
+  cursor: pointer; /* Tambahkan properti cursor di sini */
+}
+
+.card2 {
+  /* margin-left : 50px; */
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: left;
+}
+
+.card general-card {
+
+}
+
+.icon-pointer {
+  cursor: pointer;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+.textbox {
+  font-family: 'Lexend', sans-serif;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #3498db;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #f8f8f8;
+  transition: border-color 0.3s ease-in-out;
+  width: 80%;
+}
+
+.textbox:focus {
+  outline: none;
+  border-color: #ff6b6b;
+  /* Warna border saat fokus */
+  box-shadow: 0px 0px 5px rgba(255, 107, 107, 0.5);
+  /* Efek bayangan saat fokus */
+}
+
+
+.card-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.card {
+  background-color: white;
+  box-shadow: 2px 2px 12px 1px rgba(140, 140, 140, .5);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #034078
+}
+
+.chart-container {
+  padding-right: 5%;
+  padding-left: 5%;
+}
